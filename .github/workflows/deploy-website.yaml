@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - 'main'
-      - 'devops-engineers'
-      - 'web-developers'
+      - 'devops-engineers' # You do not need this
+      - 'web-developers' # You do not need this
     paths:
       - 'website/**'
       - '.github/workflows/deploy-website.yaml'
@@ -39,10 +39,10 @@ jobs:
     
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v4 # the latest checkout version is v5 not v4.
 
     - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v4
+      uses: aws-actions/configure-aws-credentials@v4 # the latest AWS aws configure version is v5 not v4
       with:
         role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
         aws-region: ${{ env.AWS_REGION }}
@@ -58,7 +58,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '18' # This version of node is no more being supported. The latest version is 24.
 
     - name: Install Dependencies
       working-directory: website
