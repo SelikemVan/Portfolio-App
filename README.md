@@ -1,3 +1,5 @@
+# Hi Selikem, You used AI for everything without checking to see if they work successfully. Your codes are purely AI generated just like your pipelines and they are not deployable. Please make sure everything works fine before submitting. Your actions did not deploy anything at all. There is a very big room for improvement for you. Take care!!
+
 # Portfolio Website with AWS Infrastructure
 
 [![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
